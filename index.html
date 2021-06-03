@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LHI Circle</title>	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="page-content">			
+			<section class="banner-sec">
+				<div class="bnr-txt inner-text">
+					<h1>LHI Circle gives you access to live events, <br>
+						interviews, experiences and <br>
+						an exclusive repository of films, articles and books</h1>
+					<h2>‘JOIN OUR CIRCLE’</h2>
+				</div>
+			</section>
+
+			<section class="circle-sec">
+				<div class="inner-text">
+					<h2>LHI Circle</h2>
+					<p>You get access to "immersive journeys" every week for</p>
+					<div class="left-right-wrap">
+						<div class="left-sec">
+							<img src="./images/circle-img.png">
+						</div>
+						<div class="right-sec">						
+							<p>Lost Cities & Trails</p>
+							<p>Interactions & Intersections</p>
+							<p>Cuisines & Cultures</p>
+							<p>Masterpieces & Treasures</p>						
+						</div>
+					</div>					
+				</div>
+			</section>
+
+			<section class="top-pics-sec">
+				<div class="inner-text">
+					<h2>TOP PICKS</h2>
+					<div class="owl-carousel owl-theme">
+					    <div class="item">
+					    	<img src="./images/Gupta.png">
+					    </div>
+					    <div class="item">
+					    	<img src="./images/Dara_Shukoh.jpg">
+					    </div>
+					    <div class="item">
+					    	<img src="./images/Bundi.png">
+					    </div>
+					    <div class="item">
+					    	<img src="./images/Jhansi.png">
+					    </div>
+					    <div class="item">
+					    	<img src="./images/Jhansi.png">
+					    </div>
+					</div>
+				</div>
+			</section>
+
+			<section class="plan-sec">
+				<div class="inner-text">
+					<h2>Choose a Plan</h2>
+					<div class="plan-wrap">
+					    <div class="list">
+					    	<img src="./images/Group_1.png">
+					    </div>
+					    <div class="list">
+					    	<img src="./images/Group_2.png">
+					    </div>
+					    <div class="list">
+					    	<img src="./images/Group_3.png">
+					    </div>
+					    <div class="list">
+					    	<img src="./images/Group_4.png">
+					    </div>
+					</div>
+				</div>
+			</section>
+
+			<section class="benifits-sec">
+				<div class="inner-text">
+					<h2>BENEFITS</h2>
+					<div class="benefits-list">
+						<div class="list">
+							<p>Joining LHI Circle gives you access to <strong>6 to 8 immersive</strong> & exclusive programmes and events</p>
+						</div>
+						<div class="list">
+							<p>Interact with top historians and authors from <strong>around the world</strong> as they share their research and insights</p>
+						</div>
+						<div class="list">
+							<p>Travel in time to <strong>lost cities and join us as we explore</strong> hard-to-reach of historical and cultural significance</p>
+						</div>
+						<div class="list">
+							<p>Experience sites from across the Indian subcontinent <strong>with experts</strong></p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+	<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.owl-carousel').owlCarousel({
+			    loop:true,
+			    margin:40,
+			    height: 320,
+			    responsiveClass:true,
+			    responsive:{
+			        0:{
+			            items:2,
+			            nav:true
+			        },
+			        600:{
+			            items:3,
+			            nav:false
+			        },
+			        1000:{
+			            items:4,
+			            nav:true,
+			            loop:false
+			        }
+			    }
+			})
+		});
+	</script>
+</body>
+</html>

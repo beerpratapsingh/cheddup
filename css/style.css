@@ -1,0 +1,260 @@
+:root{
+  --primary-color: #000;
+  --secondary-color: #0081cb;
+  --gray-bg: #C4C4C4;
+}
+
+/* Reset css */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* Common css */
+body{  
+  color: var(--primary-color);
+  font-size: 18px;
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.2;
+  background: var(--gray-bg);
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+.banner-sec{
+	background-image: url(../images/banner.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 540px;
+	display: flex;
+    align-items: flex-end;
+}
+
+.banner-sec .bnr-txt{
+    text-align: center;
+    color: #fff;
+}
+
+
+.inner-text{
+	max-width: 1024px;
+    margin: 0 auto;
+}
+
+.banner-sec .bnr-txt h1{
+	font-size: 36px;
+    font-weight: 500;
+    line-height: 1.5;
+    /*padding: 150px 0 50px;*/
+}
+
+.banner-sec .bnr-txt h2{
+	font-size: 52px;
+	font-weight: normal;
+}
+
+.circle-sec .inner-text > h2{
+	font-size: 48px;	
+	text-align: center;
+	margin-bottom: 7px;
+	border-bottom: 1px solid #000;
+}
+.circle-sec .inner-text > p{
+	font-size: 36px;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.left-right-wrap{
+	display: flex;
+	align-items: center;
+}
+
+.left-sec{	
+	width: 40%;
+}
+.left-sec img{
+	width: 100%;
+}
+.right-sec{	
+	background: rgba(111, 248, 210, 0.09);
+    border-radius: 12px;
+    padding: 5px 50px 30px;
+}
+
+.right-sec p{
+	margin-bottom: 16px;
+    font-size: 36px;
+    color: #000;
+}
+
+.right-sec p::before {
+	content: '';	
+	width: 66px;
+	height: 68px;
+	display: inline-block;
+	background: url(../images/bi_bookmark-star-fill.png) no-repeat left top;
+	position: relative;
+	top: 27px;
+    left: -15px;
+}
+
+
+.inner-text h2{
+	text-align: center;
+	font-size: 48px;
+	padding: 30px 0;
+} 
+
+
+
+.benifits-sec, .top-pics-sec{
+	background: #fff;
+	clear: both;
+}
+
+.top-pics-sec .owl-carousel{
+	position: relative;
+}
+.top-pics-sec .owl-carousel .owl-nav{
+	position: relative;
+    top: -220px;
+}
+
+.top-pics-sec .owl-carousel .owl-nav .owl-prev{
+	position: absolute;
+    left: -50px;
+}
+
+.top-pics-sec .owl-carousel .owl-nav .owl-next{
+	position: absolute;
+    right: -50px;
+}
+
+.top-pics-sec .owl-carousel .owl-item{
+	max-height: 328px;
+}
+
+.owl-carousel .owl-nav button span{
+	font-size: 64px;
+}
+
+.owl-dots{
+	opacity: 0;
+}
+
+.plan-sec{
+	background: #fff;
+}
+.plan-sec .plan-wrap{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.plan-sec .list {
+    width: 23%;
+    max-height: 320px;
+}
+
+.plan-sec .list img{
+	max-width: 100%;
+}
+
+.benifits-sec .benefits-list{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    background: rgba(128, 128, 128, 0.2);
+    padding: 20px 7px;
+    border-radius: 23px;
+}
+
+.benifits-sec .benefits-list .list{
+	width: 18%;
+    background: #fff;
+    border-radius: 23px;
+    padding: 30px 5px 20px 30px;
+    position: relative;
+    margin: 20px 15px 20px;
+}
+
+.benifits-sec .benefits-list .list::before{
+	content: '';
+	width: 68px;
+	height: 68px;
+	display: inline-block;
+	background: url(../images/teenyicons_tick-circle-solid.png) no-repeat left top;
+	position: absolute;
+	left: -20px;
+    top: -30px;
+}
+
+
+@media only screen and (max-width: 767px) {
+	.inner-text{
+		padding: 0 20px;
+	}
+	.banner-sec{
+		height: 450px;
+	}
+	.banner-sec .bnr-txt h1{
+		font-size: 24px;
+	}
+	.banner-sec .bnr-txt h2{
+		font-size: 36px;
+	}
+	.left-right-wrap{
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.left-sec{
+		width: auto;
+	}
+	.right-sec{
+		width: auto;
+		padding: 5px 10px 30px;
+	}
+	.right-sec p{
+		font-size: 32px;
+	}
+	.top-pics-sec .owl-carousel .owl-nav .owl-prev{
+		left: 0;
+	}
+	.top-pics-sec .owl-carousel .owl-nav .owl-next{
+		right: 0;
+	}
+
+	.plan-sec .plan-wrap{
+		justify-content: space-evenly;
+	}
+	.plan-sec .list{
+		width: 48%;
+		margin-bottom: 60px;
+	}
+
+	.benifits-sec .benefits-list .list{
+		width: 35%;
+	}
+
+	.benifits-sec .benefits-list .list::before{
+		background-size: 54px 54px;
+	}
+
+
+}
+
+
+
+
+
+
+
+
